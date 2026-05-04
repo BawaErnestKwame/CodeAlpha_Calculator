@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Animated Calculator | Floating Icons Background</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Animated Background Icons Container -->
+  <div class="floating-icons">
+    <div class="icon calculator-icon">🧮</div>
+    <div class="icon plus-icon">+</div>
+    <div class="icon minus-icon">−</div>
+    <div class="icon multiply-icon">×</div>
+    <div class="icon divide-icon">÷</div>
+    <div class="icon equals-icon">=</div>
+    <div class="icon percent-icon">%</div>
+    <div class="icon number-icon">123</div>
+    <div class="icon calculator-icon">📱</div>
+    <div class="icon plus-icon">➕</div>
+    <div class="icon minus-icon">➖</div>
+    <div class="icon multiply-icon">✖️</div>
+    <div class="icon divide-icon">➗</div>
+    <div class="icon equals-icon">≈</div>
+    <div class="icon number-icon">∞</div>
+    <div class="icon calculator-icon">⚡</div>
+    <div class="icon plus-icon">+</div>
+    <div class="icon minus-icon">-</div>
+    <div class="icon multiply-icon">*</div>
+    <div class="icon divide-icon">/</div>
+    <div class="icon number-icon">#</div>
+    <div class="icon calculator-icon">🔢</div>
+    <div class="icon plus-icon">⊕</div>
+    <div class="icon minus-icon">⊖</div>
+    <div class="icon multiply-icon">⊗</div>
+    <div class="icon divide-icon">⊘</div>
+  </div>
+  
+  <div class="calculator-container">
+    <div class="calculator">
+      <!-- Display Section -->
+      <div class="display">
+        <div class="previous-operand" id="previousOperand"></div>
+        <div class="current-operand" id="currentOperand">0</div>
+      </div>
+      
+      <!-- Buttons Grid -->
+      <div class="buttons">
+        <!-- Row 1 -->
+        <button class="btn btn-clear" data-action="clear">AC</button>
+        <button class="btn btn-clear" data-action="delete">DEL</button>
+        <button class="btn btn-operator" data-operator="%">%</button>
+        <button class="btn btn-operator" data-operator="/">÷</button>
+        
+        <!-- Row 2 -->
+        <button class="btn btn-number" data-number="7">7</button>
+        <button class="btn btn-number" data-number="8">8</button>
+        <button class="btn btn-number" data-number="9">9</button>
+        <button class="btn btn-operator" data-operator="*">×</button>
+        
+        <!-- Row 3 -->
+        <button class="btn btn-number" data-number="4">4</button>
+        <button class="btn btn-number" data-number="5">5</button>
+        <button class="btn btn-number" data-number="6">6</button>
+        <button class="btn btn-operator" data-operator="-">−</button>
+        
+        <!-- Row 4 -->
+        <button class="btn btn-number" data-number="1">1</button>
+        <button class="btn btn-number" data-number="2">2</button>
+        <button class="btn btn-number" data-number="3">3</button>
+        <button class="btn btn-operator" data-operator="+">+</button>
+        
+        <!-- Row 5 -->
+        <button class="btn btn-number zero" data-number="0">0</button>
+        <button class="btn btn-number" data-number=".">.</button>
+        <button class="btn btn-equals" data-action="equals">=</button>
+      </div>
+    </div>
+    
+    <!-- Keyboard Support Hint -->
+    <div class="keyboard-hint">
+      <span>⌨️ Keyboard supported: 0-9, + - * / . Enter, Escape, Backspace</span>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
